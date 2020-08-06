@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Fetch Practice</title>
+</head>
+<body>
+
+  <section class='flex'>
+    <section>
+      <section>
+        <!-- When you click this button, the posts collected in the fetch request will be logged in the console in your devtools tray -->
+        <h3>Click a button below to fetch posts from a server or display them in the window.</h3>
+        <button onclick="getPosts()">Fetch 100 Posts</button>
+        <button onclick="fetchFivePosts()">Fetch 5 Posts</button> - - - - -
+        <button onclick="displayPost()">Display Posts</button>
+        <button onclick="consolePosts()">Console Posts</button>
+      </section>  
+      
+      <section>
+        <h3>Fetch Comments and display them in the window.</h3>
+        <button onclick="getComments()">Fetch Comments</button> - - - - -
+        <button onclick="displayComments()">Display Comments</button>
+      </section>
+      
+      <section>
+        <h3>Fetch Users and display them in the window.</h3>
+        <button onclick="getUsers()">Fetch Users</button> - - - - -
+        <button onclick="displayUsers()">Display Users</button>
+      </section>
+
+    </section>
+    
+    <section> 
+      <section>
+        <h3>Create a new POST to the database, takes a minute</h3>
+        <button onclick="newPost()">New Post</button>
+      </section>
+      
+      <section>
+        <h3>Create a new POST to the database, takes a minute</h3>
+        <button onclick="editPost()">Edit Post</button>
+      </section>
+     
+      <section>
+        <h3>Clear the display.</h3>
+        <button onclick="clearDisplay()">Clear Display</button>
+      </section>
+    </section>
+  </section>
+
+      <br><hr><br>
+  
+  <h1>DISPLAY</h1>
+  <section class="flex">
+    <ul id='all-posts'></ul> 
+  </section>
+  <script src="./main.js"></script>
+</body>
+</html>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+  h1,h2,h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size:25px;
+  }
+
+  h1 {
+    margin: 0 auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .flex {
+    display:flex;
+    align-items:center;
+    justify-content: space-evenly;
+  }
+
+  button {
+    padding:10px;
+    font-size:20px;
+  }
+
+  ul {
+    font-size:20px;
+    font-family: 'Oswald', sans-serif;
+  }
+  li  {
+    margin:20px;
+    list-style-type: none;
+    border: solid 1px black;
+    padding:10px;
+  }
+</style>

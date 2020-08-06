@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap');
+
+body {
+    font-family: 'OpenSans Condensed', sans-serif;
+    width:100%;
+    margin:0;
+}
+
+h4 {
+    font-size:20px;
+    text-transform:uppercase;
+    padding:10px;
+    margin:10px 0px;
+    border-bottom:solid gray 2px;
+}
+
+h3 {
+    font-size:20px;
+    text-transform:uppercase;
+    padding:10px;
+    margin:10px 0px;
+}
+
+p {
+    margin:2px 0px;
+}
+
+ul {
+    list-style-type: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+}
+
+#header {
+    width:100%;
+    height:200px;
+}
+
+.bold {
+    font-weight:600;
+    text-decoration:underline;
+}
+
+#rosterButtons {
+    display:flex;
+}
+
+.customButton {
+    background:rgb(218, 218, 218);
+    text-transform: uppercase;
+    font-weight: 600;
+    padding:10px;
+    width:100px;
+    height:55px;
+    margin:5px;
+    text-align:center;
+    display:flex;
+    align-items:center;
+    cursor:pointer;
+}
+.customButton:hover {
+    background:rgb(206, 230, 197);
+}
+.redButton {
+    background:rgb(207, 79, 79);
+    color:rgb(78, 11, 11);
+}
+.blueButton {
+    background:rgb(79, 135, 207);
+    color:rgb(27, 53, 87);
+}
+
+#wrapper {
+    width:95%;
+    height:100%;
+    margin:10px auto;
+    overflow:hidden;
+}
+
+.wordWrap {
+    margin:0px 10px;
+}
+
+#people, #players, #blue, #red {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+#people img, #players img, #blue img, #red img {
+    border-radius: 20px;
+    margin:10px;
+}
+
+#people li, #players li, #blue li, #red li {
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    background:rgb(235, 235, 235);
+    margin:5px 5px;
+    padding:10px;
+    text-align:center;
+}
+
+#teamWrapper {
+    display:flex;
+}
+
+#redWrapper, #blueWrapper {
+    width:50%;
+    margin-top:10px;
+}
+
+#redWrapper {
+    color:rgb(255, 0, 0);
+    padding:0 10px;
+}
+#blueWrapper {
+    color:rgb(0, 110, 255);
+    padding:0 10px;
+}
+
+.redBg {
+    background:none !important;
+    border:red solid 5px;
+    color:black;
+}
+.blueBg {
+    background:none !important;
+    border:rgb(16, 98, 206) solid 5px;
+    color:rgb(27, 53, 87);
+}

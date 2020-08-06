@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="animate.css">
+  <title>Dodge Ball Sign Up</title>
+</head>
+
+<body>
+  <section id="wrapper">
+    <section id="rosterButtons" class="animated slideInRight fast">
+      <div id="getNewRoster" class="customButton" onclick="getPlayers()">Populate Roster</div>
+      <div id="clearRoster" class="customButton" onclick="removePlayers()">Clear Roster</div>
+      <div id="newGame" class="customButton" onclick="newGame()">Reset App</div>
+    </section>
+
+    <div>
+      <h4 class="animated slideInRight">Roster</h4>
+      <ul id="people"></ul>
+    </div>
+
+    <div>
+      <h4 class="animated slideInRight">Pending Players</h4>
+      <ul id="players"></ul>
+    </div>
+
+    <h4 class="animated slideInRight">Teams</h4>
+    <section id='teamWrapper' class="animated slideInRight">
+      <div id="redWrapper">
+        <h3>Crimson Wolves</h3>
+        <ul id="red"></ul>
+      </div>
+      <div id='blueWrapper'>
+        <h3>Royal Barracuda</h3>
+        <ul id="blue"></ul>
+      </div>
+    </section>
+  </section>
+  <script src='./main.js'></script>
+</body>
+
+</html>
